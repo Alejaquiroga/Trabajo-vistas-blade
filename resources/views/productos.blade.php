@@ -13,6 +13,11 @@
             <h3>{{ $producto['nombre'] }}</h3>​
             ​
             <p>Precio: ${{ $producto['precio'] }}</p>​
+            
+            {{-- Desafío --}}
+            @if($producto['precio'] > 3000)
+                <p style="color: orange; font-weight: bold;">⭐ Producto destacado</p>
+            @endif
             ​
             @if ($producto['stock'] > 0)
                 ​
@@ -22,6 +27,6 @@
             @endif​
         </div>​
     @empty​
-        <p>No hay productos cargados.</p>​
+        <p>Lo sentimos, actualmente nuestro catalogo de productos esta vacío.</p>​
     @endforelse​
 @endsection

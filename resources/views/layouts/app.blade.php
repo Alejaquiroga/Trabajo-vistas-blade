@@ -53,11 +53,12 @@
 </head>
 <body>
     <header>
-        <h1>Mi sitio Laravel</h1>
+        <h1>Mi Tienda Blade S.A.</h1>
         <nav>
-            <a href="{{ url('/') }}">Inicio</a>
-            <a href="{{ url('/productos') }}">Productos</a>
-            <a href="{{ url('/contacto') }}">Contacto</a>
+    <a href="{{ url('/') }}">Inicio</a>
+    <a href="{{ url('/nosotros') }}">Nosotros</a>
+    <a href="{{ url('/productos') }}">Productos</a>
+    <a href="{{ url('/contacto') }}">Contacto</a>
         </nav>
     </header>
 

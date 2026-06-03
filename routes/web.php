@@ -23,6 +23,11 @@ Route::get('/productos', function () {
             'precio' => 3200,
             'stock' => 0,
         ],
+        [
+            'nombre' => 'Café Orgánico',
+            'precio' => 4500,
+            'stock' => 5,
+        ],
     ];
 
     return view('productos', [
@@ -35,5 +40,9 @@ Route::get('/contacto', function () {
     return view('contacto', [
         'email' => $email,
     ]);
+});
+
+Route::get('/nosotros', function () {
+    return view('nosotros');
 });
 
